@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-900 text-white h-screen flex items-center justify-center px-10"
+  >
+    <div class="w-full mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+      <h1 class="text-4xl font-bold text-center text-blue-500 mb-6">SmartAi</h1>
+      <div
+        id="answer"
+        class="p-5 bg-gray-700 text-white rounded-lg mb-6 h-96 w-full overflow-auto border-2 border-gray-600"
+      ></div>
+      <div class="mb-4">
+        <input
+          type="text"
+          id="question"
+          placeholder="Type your question..."
+          class="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+      <button
+        onclick="sendReq()"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg transition-colors"
+      >
+        Submit
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
